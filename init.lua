@@ -59,6 +59,7 @@ require('lazy').setup({
   -- Other useful completion sources
   { 'hrsh7th/cmp-buffer' },
   { 'hrsh7th/cmp-path' },
+  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
 })
 
 -- nvim-cmp setup
