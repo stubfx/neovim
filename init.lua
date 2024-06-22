@@ -1,5 +1,7 @@
 -- init.lua
 -- vim.fn.setenv("CC", "zig cc")
+vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- Bootstrap lazy.nvim (if not already done)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -15,7 +17,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup plugins with lazy.nvim
-require('lazy').setup("plugins")
+require('lazy').setup("plugin")
 
 -- nvim-cmp setup
 local cmp = require'cmp'
