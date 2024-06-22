@@ -41,6 +41,8 @@ cmp.setup({
 })
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.o.wrap = false
 vim.cmd("colorscheme kanagawa")
+-- do not use when using other plugins.
 -- require('transparent')
 require('tabs')
