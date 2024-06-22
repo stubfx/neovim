@@ -82,6 +82,9 @@ require('lazy').setup({
     {
         "nvim-treesitter/playground",
         dependencies = { "nvim-treesitter/nvim-treesitter" }  -- Ensures load order
+    },
+    {
+        "rebelot/kanagawa.nvim"
     }
 })
 
@@ -109,5 +112,6 @@ cmp.setup({
 })
 vim.wo.number = true
 vim.wo.relativenumber = true
-require('transparent')
+vim.cmd("colorscheme kanagawa")
+-- require('transparent')
 require('tabs')
