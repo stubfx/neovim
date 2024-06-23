@@ -21,14 +21,16 @@ return {
             require('mason-lspconfig').setup_handlers {
                 function(server_name)
                     lspconfig[server_name].setup {
-                        capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+                        capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
+                        root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
                     }
                 end,
             }
             -- ESLint configuration
-            require('lspconfig').eslint.setup {
-                root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
-            }
+            -- this is commented cause is handled above.
+            --require('lspconfig').eslint.setup {
+            --            root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
+            --}
         end
     },
     -- LSPConfig
