@@ -23,7 +23,14 @@ require('lazy').setup("plugin")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.wrap = false
-vim.cmd("colorscheme kanagawa")
+vim.cmd.colorscheme "catppuccin"
+-- Set tab width to 4 spaces
+vim.o.tabstop = 4
+-- Set indentation width to 4 spaces
+vim.o.shiftwidth = 4
+-- Use spaces instead of tabs
+vim.o.expandtab = true
+
 -- do not use when using other plugins.
 -- require('transparent')
 require('tabs')

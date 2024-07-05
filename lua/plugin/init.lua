@@ -26,11 +26,19 @@ return {
                     }
                 end,
             }
-            -- ESLint configuration
-            -- this is commented cause is handled above.
-            --require('lspconfig').eslint.setup {
-            --            root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
-            --}
+
+            -- lspconfig.lua_ls.setup {
+            --     settings = {
+            --         Lua = {
+            --             workspace = {
+            --                 library = vim.api.nvim_get_runtime_file("", true),
+            --                 userThirdParty = {
+            --                     "C:\\Users\\lucam\\Desktop\\fivem\\library"
+            --                 },
+            --             },
+            --         },
+            --     },
+            -- }
         end
     },
     -- LSPConfig
@@ -48,7 +56,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        config = function () 
+        config = function ()
             local configs = require("nvim-treesitter.configs")
             local install = require("nvim-treesitter.install")
             install.compilers = {"zig"}
@@ -61,7 +69,7 @@ return {
                 -- will investigate, but for the moment installing sync works.
                 sync_install = false,
                 highlight = { enable = true },
-                indent = { enable = true },  
+                indent = { enable = true },
             })
         end
     },
@@ -70,11 +78,8 @@ return {
         dependencies = { "nvim-treesitter/nvim-treesitter" }  -- Ensures load order
     },
     {
-        "rebelot/kanagawa.nvim",
-        config = function ()
-            require('kanagawa').setup({
-                transparent = true
-            })
-	end
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000
     }
 }
