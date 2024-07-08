@@ -1,5 +1,4 @@
 -- init.lua
--- vim.fn.setenv("CC", "zig cc")
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.cmd('language en_US')
