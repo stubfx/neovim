@@ -29,6 +29,10 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 -- Use spaces instead of tabs
 vim.o.expandtab = true
+-- Always case insensitive search
+vim.opt.ignorecase = true
+-- Case sensitive if uppercase letter is present in search
+vim.opt.smartcase = true
 
 -- do not use when using other plugins.
 -- require('transparent')
