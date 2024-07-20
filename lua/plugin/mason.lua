@@ -43,7 +43,6 @@ return {
             }
             lspconfig.clangd.setup{
                 cmd = { "clangd", "--compile-commands-dir=D:/EpicGames/UE_5.4" },
-                capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
             }
         end
     },
