@@ -33,7 +33,3 @@ vim.o.expandtab = true
 vim.opt.ignorecase = true
 -- Case sensitive if uppercase letter is present in search
 vim.opt.smartcase = true
-
--- do not use when using other plugins.
--- require('transparent')
-require('tabs')
