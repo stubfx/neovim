@@ -8,12 +8,12 @@ config.default_prog = { 'powershell.exe' }
 
 -- For example, changing the color scheme:
 -- config.color_scheme = 'AdventureTime'
-config.window_background_opacity = 0.98
-config.window_background_gradient = {
-    -- preset = "Warm",
-    colors = {'0e0c2a', '08061d', '000'},
-    orientation = { Linear = { angle = -45.0 } }
-}
+--  config.window_background_opacity = 1
+-- config.window_background_gradient = {
+--     -- preset = "Warm",
+--     colors = {'0e0c2a', '08061d', '000'},
+--     orientation = { Linear = { angle = -45.0 } }
+-- }
 -- config.background = {
 --     -- This is the deepest/back-most layer. It will be rendered first
 --     {
