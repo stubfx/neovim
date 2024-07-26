@@ -21,7 +21,8 @@ return {
                 function(server_name)
                     lspconfig[server_name].setup {
                         capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities()),
-                        root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
+                        -- root_dir = require('lspconfig/util').root_pattern('.eslintrc', '.git', 'package.json')
+                        root_dir = function () return vim.fn.getcwd() end,
                     }
                 end,
             }
@@ -42,6 +43,7 @@ return {
                 },
             }
             lspconfig.clangd.setup{
+                root_dir = function () return vim.fn.getcwd() end,
                 cmd = { "clangd", "--compile-commands-dir=D:/EpicGames/UE_5.4" },
             }
         end
