@@ -24,6 +24,11 @@ return {
             show_model = false, -- Displays which model you are using at the beginning of your chat session.
             no_auto_close = true, -- Never closes the window automatically.
             debug = false -- Prints errors and the command which is run.
-        }
+        },
+        config = function (_, opts)
+            require('gen').setup(opts)
+            vim.keymap.set({ 'n', 'v' }, '<leader>]', ':Gen<CR>')
+            vim.keymap.set({ 'n', 'v' }, '<leader>[', ':Gen Chat<CR>')
+        end
     }
 }
