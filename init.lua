@@ -33,3 +33,5 @@ vim.o.expandtab = true
 vim.opt.ignorecase = true
 -- Case sensitive if uppercase letter is present in search
 vim.opt.smartcase = true
+-- Set the color column at the 80th character
+vim.opt.colorcolumn = "80"
