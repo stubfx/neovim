@@ -13,6 +13,9 @@ return {
                 ensure_installed = {"vim", "vimdoc", "lua", "javascript", "html", "python"},
                 -- especially on windows system, apparently it breaks? i still don't know why, possibly cmd
                 -- will investigate, but for the moment installing sync works.
+                -- found out why, fixed with zig above.
+                -- you're probably asking for an explanation right? had to do something with libraries
+                -- was working with sync probably cause of those, I've neever looked too much into it.
                 sync_install = false,
                 highlight = { enable = true },
                 indent = { enable = true },

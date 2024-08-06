@@ -27,6 +27,13 @@ return {
                 end,
             }
 
+            -- Key mappings for LSP functions
+            local opts = { noremap=true, silent=true }
+            vim.api.nvim_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+            vim.api.nvim_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+            vim.api.nvim_set_keymap('n', 'gr', '<Cmd>lua vim.lsp.buf.references()<CR>', opts)
+            vim.api.nvim_set_keymap('n', 'gi', '<Cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+
             lspconfig.lua_ls.setup {
                 settings = {
                     Lua = {
@@ -43,9 +50,9 @@ return {
                 },
             }
             lspconfig.clangd.setup{
-                root_dir = function () return vim.fn.getcwd() end,
+                -- root_dir = function () return vim.fn.getcwd() end,
                 cmd = { "clangd", "--compile-commands-dir=D:/EpicGames/UE_5.4" },
-                -- cmd = { "clangd", "--compile-commands-dir=" .. vim.fn.getcwd() },
+                -- cmd = { "clangd", "--compile-commands-dir=" .. function () return vim.fn.getcwd() end },
             }
         end
     },
