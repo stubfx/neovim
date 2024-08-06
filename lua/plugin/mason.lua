@@ -54,6 +54,19 @@ return {
                 cmd = { "clangd", "--compile-commands-dir=D:/EpicGames/UE_5.4" },
                 -- cmd = { "clangd", "--compile-commands-dir=" .. function () return vim.fn.getcwd() end },
             }
+
+
+            lspconfig.tsserver.setup {
+                settings = {
+                    javascript = {
+                        suggest = {
+                            completeFunctionCalls = true,
+                        }
+                    }
+                }
+            }
+
+
         end
     },
     -- LSPConfig
