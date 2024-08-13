@@ -35,3 +35,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- Set the color column at the 80th character
 vim.opt.colorcolumn = "80"
+vim.api.nvim_create_autocmd("InsertLeave", {
+    pattern = "*",
+    command = "w"
+})
+
