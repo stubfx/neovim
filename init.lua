@@ -1,4 +1,6 @@
 -- init.lua
+vim.o.exrc = true
+vim.o.secure = true
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.cmd('language en_US')
