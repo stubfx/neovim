@@ -70,6 +70,18 @@ return {
                 }
             }
 
+            lspconfig.pylsp.setup {
+                settings = {
+                    pylsp = {
+                        plugins = {
+                            pycodestyle = {
+                                enabled = true
+                            }
+                        }
+                    }
+                }
+            }
+
 
         end
     },
