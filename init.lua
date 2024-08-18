@@ -2,7 +2,8 @@
 vim.o.exrc = true
 vim.o.secure = true
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- this is gonna be replaced by oil.
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.cmd('language en_US')
 -- Bootstrap lazy.nvim (if not already done)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
