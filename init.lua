@@ -25,7 +25,7 @@ require('lazy').setup("plugin")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.wrap = false
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin-macchiato"
 -- Set tab width to 4 spaces
 vim.o.tabstop = 4
 -- Set indentation width to 4 spaces
@@ -37,6 +37,4 @@ vim.opt.ignorecase = true
 -- Case sensitive if uppercase letter is present in search
 vim.opt.smartcase = true
 -- Set the color column at the 80th character
-vim.opt.colorcolumn = "80"
-
-
+-- vim.opt.colorcolumn = "80"
