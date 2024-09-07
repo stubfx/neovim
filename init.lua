@@ -35,13 +35,3 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- Set the color column at the 80th character
 -- vim.opt.colorcolumn = "80"
-local project_config = vim.fn.getcwd() .. '/.nvimrc.lua'
-if vim.fn.filereadable(project_config) == 1 then
-  local answer = vim.fn.input("Source local .nvimrc.lua? (y/n): ")
-    print("\n")
-  if answer == 'y' then
-    dofile(project_config)
-  else
-    print("Skipped sourcing .project.lua")
-  end
-end
