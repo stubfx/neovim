@@ -54,7 +54,7 @@ return {
             }
 
 
-            lspconfig.tsserver.setup {
+            lspconfig.ts_ls.setup {
                 settings = {
                     javascript = {
                         suggest = {
@@ -75,6 +75,8 @@ return {
                     }
                 }
             }
+
+            lspconfig.glsl_analyzer.setup{}
 
 
         end
