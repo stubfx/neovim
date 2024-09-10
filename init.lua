@@ -17,7 +17,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup plugins with lazy.nvim
-require('lazy').setup("plugin")
+require('lazy').setup("plugin", {
+    lazy = true,
+})
 
 vim.wo.number = true
 vim.wo.relativenumber = true
