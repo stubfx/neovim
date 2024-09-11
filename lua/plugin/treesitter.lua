@@ -36,5 +36,9 @@ return {
     {
         "nvim-treesitter/playground",
         dependencies = { "nvim-treesitter/nvim-treesitter" }  -- Ensures load order
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        dependencies = { "nvim-treesitter/nvim-treesitter" }  -- Ensures load order
     }
 }
