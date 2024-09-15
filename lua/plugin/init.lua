@@ -1,15 +1,5 @@
 return {
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-        config = function ()
-            require('catppuccin').setup {
-                transparent_background = true, -- disables setting the background color.
-            }
-        end
-    },
-    {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function ()
