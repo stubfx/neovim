@@ -1,4 +1,4 @@
-local fzf_lua = require('fzf-lua')
+-- local fzf_lua = require('fzf-lua')
 
 -- Keybindings
 vim.api.nvim_set_keymap('n', '<leader>pf', ':FzfLua files<CR>', { noremap = true, silent = true })
