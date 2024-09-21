@@ -36,7 +36,6 @@ return {
                     operators = {},
                     -- miscs = {}, -- Uncomment to turn off hard-coded styles
                 },
-                color_overrides = {},
                 custom_highlights = {},
                 default_integrations = true,
                 integrations = {
@@ -50,6 +49,14 @@ return {
                         indentscope_color = "",
                     },
                     -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+                },
+                color_overrides = {
+                    macchiato = {
+                        green = "#3ae198",
+                        blue = "#1bc5f2",
+                        lavender = "#a899ff",
+                        peach = "#ff940a",
+                    }
                 },
             }
         end
