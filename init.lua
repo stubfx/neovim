@@ -22,7 +22,7 @@ require('lazy').setup("plugin")
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.wrap = false
-vim.cmd.colorscheme "catppuccin-macchiato"
+vim.cmd.colorscheme "catppuccin-mocha"
 -- Set tab width to 4 spaces
 vim.o.tabstop = 4
 -- Set indentation width to 4 spaces
