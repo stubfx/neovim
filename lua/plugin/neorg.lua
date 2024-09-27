@@ -1,27 +1,27 @@
 return {
     {
-      "nvim-neorg/neorg",
-      version = "*",
-      cmd = "Neorg",
-      config = function()
-        require("neorg").setup {
-          load = {
-            ["core.defaults"] = {},
-            ["core.concealer"] = {},
-            ["core.dirman"] = {
-              config = {
-                workspaces = {
-                  notes = "~/notes",
+        "nvim-neorg/neorg",
+        version = "*",
+        event = "VeryLazy",
+        -- cmd = "Neorg",
+        config = function()
+            require("neorg").setup {
+                load = {
+                    ["core.defaults"] = {},
+                    ["core.concealer"] = {},
+                    ["core.dirman"] = {
+                        config = {
+                            workspaces = {
+                                notes = "~/notes",
+                            },
+                            default_workspace = "notes",
+                        },
+                    },
                 },
-                default_workspace = "notes",
-              },
-            },
-          },
-        }
-  
-        vim.wo.foldlevel = 99
-        vim.wo.conceallevel = 2
-      end
+            }
+            vim.wo.foldlevel = 99
+            vim.wo.conceallevel = 2
+        end
     },
     {
         "dhruvasagar/vim-table-mode",
