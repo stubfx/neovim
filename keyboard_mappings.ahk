@@ -11,6 +11,6 @@ CapsLock::Control  ; Make CapsLock act like the Control (Ctrl) key
 ^[::Send("{Esc}")        ; Ctrl + [ to Escape
 
 !h::Send("{Left}")
-!j::Send("{Down}")
-!k::Send("{Up}")
-!l::Send("{Right}")
+!n::Send("{Down}")
+!e::Send("{Up}")
+!i::Send("{Right}")
