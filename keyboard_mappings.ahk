@@ -2,22 +2,13 @@
 CapsLock::Control  ; Make CapsLock act like the Control (Ctrl) key
 
 ; Remap Ctrl + H to Backspace
-^h:: {
-    SendInput("{Backspace}")
-    SendInput("{Ctrl Up}")
-}
+^h::SendInput("{Backspace}")
 
 ; Remap Ctrl + M to Enter
-^m:: {
-    SendInput("{Enter}")
-    SendInput("{Ctrl Up}")
-}
+^m::SendInput("{Enter}")
 
 ; Remap Ctrl + [ to Escape
-^[:: {
-    SendInput("{Esc}")
-    SendInput("{Ctrl Up}")
-}
+^[::SendInput("{Esc}")
 
 ; Remap Alt + H to Left Arrow
 !h::SendInput("{Left}")
