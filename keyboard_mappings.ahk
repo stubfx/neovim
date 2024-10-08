@@ -1,4 +1,8 @@
-﻿
+﻿; Toggle suspension of hotkeys on F1
+#SuspendExempt
+F1::Suspend
+#SuspendExempt False
+
 ; Remap CapsLock to Ctrl
 CapsLock::Control  ; Make CapsLock act like the Control (Ctrl) key
 
